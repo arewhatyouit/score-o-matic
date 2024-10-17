@@ -1,0 +1,101 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.container {
+    margin: 10% auto;
+    max-width: 80%;
+    width: 700px;
+    height: 550px;
+    text-align: center;
+    border-radius: 20px;
+    background-image: url(catwallpaper.png);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid blue;
+}
+
+.scoreboard {
+    font-family: catFont;
+    font-size: 25px;
+    color: #5AB6D6;
+}
+
+.container-teams {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home, .guest {
+    display: grid;
+    justify-content: space-evenly;
+}
+
+#home-text, #guest-text {
+    color: #8CFFE4;
+    font-size: 50px;
+    font-weight: lighter;
+    display: flex;
+    font-family: catFont;
+    padding-left: 30px;
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f94ff6;
+    font-family: scoreFont;
+    font-size: 90px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+.homeadd, .guestadd {
+    padding-top: 20px;
+    color: white;
+}
+
+.homeadd button, .guestadd button {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    background-color: #1B244A;
+    color: #9AABD8;
+}
+
+button:hover {
+    color: #1B244A;
+    background-color: #9AABD8;
+    cursor: pointer;
+}
+
+.reset button {
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid #9AABD8;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'scoreFont';
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+@font-face {
+    font-family: 'catFont';
+    src: url(LucyTheCat.ttf);
+}

@@ -1,0 +1,51 @@
+<html>
+    
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+    
+<body>
+    
+    <div class="container">
+        <div class="scoreboard">
+        <h1>Score-O-Matic</h1>
+        </div>
+        <div class="container-teams">
+            
+            <div class="home">
+                <span id="home-text">home</span>
+                <div class="score">
+                    <span id="home-score">0</span>
+                </div>
+                <div class="homeadd">
+                    <button onclick="homescore1()">+1</button>
+                    <button onclick="homescore2()">+2</button>
+                    <button onclick="homescore3()">+3</button>
+                </div>
+            </div>
+            
+            <div class="guest">
+                <span id="guest-text">away</span>
+                <div class="score">
+                    <span id="guest-score">0</span>
+                </div>
+                <div class="guestadd">
+                    <button onclick="guestscore1()">+1</button>
+                    <button onclick="guestscore2()">+2</button>
+                    <button onclick="guestscore3()">+3</button>
+                </div>   
+            </div>
+        </div>
+        
+        <!-- Corrected Reset Button -->
+        <div class="reset">
+            <button onclick="resetScores()">RESET</button>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+    
+</html>
